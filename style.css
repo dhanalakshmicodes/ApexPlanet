@@ -1,0 +1,120 @@
+/* Page background and layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #dce35b, #45b649);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+/* To-do list container */
+.container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  text-align: center;
+}
+
+/* Title */
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input field for task */
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+/* Add button */
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Task count below input (optional) */
+#taskCount {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* List container */
+ul {
+  margin-top: 20px;
+  padding: 0;
+}
+
+/* Task list items */
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  word-break: break-word;
+  transition: all 0.3s ease;
+}
+
+/* Delete button inside list */
+li button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+/* Checkbox if added */
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Toast message (if used) */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 0 5px gray;
+  animation: fadeInOut 2s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
